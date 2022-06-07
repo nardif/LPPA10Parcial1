@@ -78,4 +78,10 @@ function modal(){
         document.getElementById('modalContainer').style.visibility="hidden";
     }
 }
+//CLEAR ERROR FUNCTION
+function clearErrorMsg(){
+    var errorType = "em_" + document.activeElement.name;
+    var errorMsg = document.getElementById(errorType);
+    errorMsg.classList.add('hiddenError');
+}
 }
