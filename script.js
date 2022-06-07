@@ -3,7 +3,8 @@ window.onload = function() {
     //VALIDAR SUBMIT
     document.getElementById("formRegister").addEventListener('submit', validateForm);
     var successMsg = false;
-    
+
+    document.getElementById('modalContainer').style.visibility="hidden";
     //INPUTS RETRIVE
     var fname = document.getElementById('name');
     var lastname = document.getElementById('lastname');
@@ -72,7 +73,7 @@ window.onload = function() {
     }
 
     function modal(){
-        if (successMsg.value == true) {
+        if (successMsg===true) {
             document.getElementById('modalContainer').style.visibility="visible";
         }else{
             document.getElementById('modalContainer').style.visibility="hidden";
@@ -95,15 +96,12 @@ window.onload = function() {
     //CALLING ALL VALIDATIONS
     function validateForm(submition){
         submition.preventDefault();
-        document.getElementById('modalContainer').style.visibility="hidden";
         validateNames(fname, em_name);
         validateNames(lastname,em_lastname);
         validateEmail();
         validateAge();
         validateGender();
         validateInterests();
-        setTimeout( function(){
-            modal();
-        }, 3000);
+        modal();
     }
 }
