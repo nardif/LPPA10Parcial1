@@ -84,4 +84,12 @@ function clearErrorMsg(){
     var errorMsg = document.getElementById(errorType);
     errorMsg.classList.add('hiddenError');
 }
+//CLEANING ERROR EVENTS
+fname.addEventListener('focus',clearErrorMsg);
+lastname.addEventListener('focus',clearErrorMsg);
+mail.addEventListener('focus',clearErrorMsg);
+age.addEventListener('focus',clearErrorMsg);
+gender.forEach(gender => gender.addEventListener('change', clearErrorMsg));
+interests.forEach(interests => interests.addEventListener('change', clearErrorMsg));
+
 }
