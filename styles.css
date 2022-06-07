@@ -1,0 +1,82 @@
+/*TAG*/
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    background-color: #1b3443;
+    color: floralwhite;
+}
+header{
+    background-color: #0e171c;
+    padding: 5%;
+}
+footer{
+    background-color: #0e171c;
+    padding: 0.5%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+label{
+    display: flex;
+
+}
+input{
+    display: flex;
+    width: 100%;
+}
+
+/*CLASS*/
+.titles{
+    display: flex;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.btn{
+    display: flex;
+    margin-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+.hiddenError{
+    display: none;
+}
+
+/* .modalHidden{
+    display: none;
+} */
+/*ID*/
+#country{
+    display: flex;
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+#comment{
+    width: 100%;
+}
+#modalContainer{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#modalSuccess{
+    text-align: center;    
+    padding: 30px 50px;
+    width: 50%;
+    border-radius: 5px; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: #ffffff;
+}
+.closeModal{
+    border: 0;
+    border-radius: 5px;
+    background-color: #c7c7c4;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
