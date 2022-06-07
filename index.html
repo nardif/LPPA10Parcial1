@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Clase 10 Parcial</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="media-queries.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+      <header>
+          <h1>Parcial 1</h1>
+      </header>
+
+      <h1>Form:</h1>
+    <form id="formRegister">
+        <fieldset>
+            <div>
+                <label for="name" class="titles">Name:</label>
+                <input type="text" id="name" name="name">
+                <p id="em_name" class="hiddenError">Minimum 3 letters</p>
+            </div>
+            <div>
+                <label for="lastname" class="titles">Lastname:</label>
+                <input type="text" id="lastname" name="lastname">
+                <p id="em_lastname" class="hiddenError">Minimum 3 letters</p>
+            </div>
+            <div>
+                <label for="email" class="titles">Email:</label>
+                <input type="text" id="email" name="email">
+                <p id="em_email" class="hiddenError">Must have email format: 'name@mail.com'</p>
+            </div>
+             <div>
+                <label for="age" class="titles">Age:</label>
+                <input type="text" id="age" name="age">
+                <p id="em_age" class="hiddenError">Between 1 and 100</p> 
+             </div>
+            <div>
+                <p class="titles">Gender:</p>
+                <div class="input_radio">
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender" value="female">    
+                </div>
+                <div class="input_radio">
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" value="male">    
+                </div>
+                <div class="input_radio">
+                    <label for="otherG">Other:</label>
+                    <input type="radio" id="otherG" name="gender" value="otherG">    
+                </div>
+                <p id="em_gender" class="hiddenError">Must select an option</p>
+            </div>
+            <div>
+                <p class="titles">Interests:</p>
+                <div>
+                    <label for="sports">Sports:</label>
+                    <input type="checkbox" id="sports" name="interests">
+                </div>
+                <div>
+                    <label for="music">Music:</label>
+                    <input type="checkbox" id="music" name="interests">
+                </div>
+                <div>
+                    <label for="games">Games:</label>
+                    <input type="checkbox" id="games" name="interests">
+                </div>
+                <div>
+                    <label for="tech">Tech:</label>
+                    <input type="checkbox" id="tech" name="interests">
+                </div>
+                <div>
+                    <label for="othersI">Others:</label>
+                    <input type="checkbox" id="othersI" name="interests">
+                </div>
+                <p id="em_interests" class="hiddenError">Must select at least one option</p>
+            </div>
+            <div>
+                <p class="titles">Country:</p>
+                <select name="country" id="country">
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="uruguay">Uruguay</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment" class="titles">Comment:</label>
+                <textarea type="text" name="comment" id="comment"></textarea>
+            </div>
+    
+            <input type="submit" class="btn" value="Submit">
+            <input type="reset" class="btn" value="Reset">
+        </fieldset>
+    </form>
+    <div id="modalContainer">
+        <div id="modalSuccess">
+            <p>SUCCESS!!</p>
+            <P>Your form registered correctly (:</P>
+            <a href="index.html" id="closeModal">Close</a>
+        </div>
+    </div>
+    <footer>
+        <p>LPPA - Parcial 1</p>
+        <p>Florencia Nardi</p>
+    </footer>
+    </body>
+</html>
