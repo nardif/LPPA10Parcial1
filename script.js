@@ -92,4 +92,17 @@ age.addEventListener('focus',clearErrorMsg);
 gender.forEach(gender => gender.addEventListener('change', clearErrorMsg));
 interests.forEach(interests => interests.addEventListener('change', clearErrorMsg));
 
+//CALLING ALL VALIDATIONS
+function validateForm(submition){
+    submition.preventDefault();
+    document.getElementById('modalContainer').style.visibility="hidden";
+    validateNames(fname, em_name);
+    validateNames(lastname,em_lastname);
+    validateEmail();
+    validateAge();
+    validateGender();
+    validateInterests();
+    setTimeout( function(){
+        modal();
+    }, 3000);
 }
